@@ -24,11 +24,79 @@
 # list.append(movie3) 
 # print(list)
 
-list = ["kick", "nuen", "level" "Zee"]
-str= list[0]
+# list = ["kick", "nuen", "level" "Zee"]
+# str= list[0]
 
-if(str[0] == str[len(str)-1]):
-    print("The string is palindrome")
-else:
-    print("The string is not palindrome")
+# if(str[0] == str[len(str)-1]):
+#     print("The string is palindrome")
+# else:
+#     print("The string is not palindrome")
+# mydict = {
+#     "name": "Muhammad Younus",
+#     "age" : 34,
+#     "Class": "SE",
+#     "roll": 10
+# }
 
+# print(list(mydict))          # ['name', 'age', 'Class', 'roll']
+# print(list(mydict.values())) # ['Muhammad Younus', 34, 'SE', 10]
+# print(list(mydict.items()))  # [('name', 'Muhammad Younus'), ('age', 34), ('Class', 'SE'), ('roll', 10)]
+# new_dict = {
+
+#     "subject": {
+#         "name": "python",
+#         "code": 101
+#     },
+#     "Year": 2023
+# }
+# mydict.update(new_dict)
+# print(mydict)
+# mydict["location"] = "Karachi"
+# print(mydict)
+# print(list(mydict))
+# print(mydict["subject"]["code"])  # python
+# print(mydict.get("age"))
+
+# dict1 = {
+#     "table": ["a pieace of furniture","I am made by wood"],
+#     "cat": "a small animal",
+
+
+# }
+# print(dict1)
+# print(len(dict1))
+# print(dict1.items())
+# print(dict1.values())
+
+# new_dict1 = {
+
+#     "pen": "a pieace of stationery",
+#     "laptop": "a pieace of computer"
+# }  # dict_items([('table', 'a pieace of furniture'), ('cat', 'a small animal')])
+
+
+# list = {"python", "java",  "c++","python", "javascript", "java", "python","java", "c++","c"}
+# print(list)
+
+# print("we need", len(list), " classrooms for the students",)
+
+# mark_dict = {
+
+
+# }
+
+# mark_dict["sub1"] = int(input("Enter your marks for " ))
+# mark_dict["sub2"] = int(input("Enter your marks for " ))
+# mark_dict["sub3"] = int(input("Enter your marks for " ))
+# print(mark_dict)
+# set = {9, "9.0"}
+# print(set)  # {9, 10}
+
+set = {
+
+    ("int",9),
+    ("float",9.0)
+}
+
+print(len(set))  # 2
+print(set)
