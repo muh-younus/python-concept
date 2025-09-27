@@ -92,11 +92,21 @@
 # set = {9, "9.0"}
 # print(set)  # {9, 10}
 
-set = {
+# set = {
 
-    ("int",9),
-    ("float",9.0)
-}
+#     ("int",9),
+#     ("float",9.0)
+# }
 
-print(len(set))  # 2
-print(set)
+# print(len(set))  # 2
+# print(set)
+
+f = open('word.txt',"r")
+data = f.read()
+newData=data.replace("everyone","anyone")
+print(data)
+print(newData)
+
+w = open("word.txt","w")
+data = w.write(newData)
+print(data)
