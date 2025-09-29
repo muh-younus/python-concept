@@ -81,21 +81,21 @@
 
 # 
 
-class car:
-    def __init__ (self ,model,year):
-        self.model = model
-        self.year = year
-    @staticmethod
-    def drive():
-        print("The car is driving")
+# 
 
-class suzuki(car):
-    def __init__ (self,color,name,model,year):
-        self.color = color
-        self.name = name
-        super().__init__(model,year)
-        super().drive()
-
-company = suzuki("red","swift","silion",2020)
-print(company.model)
-print(company.year)
+n = 3
+    
+if(n > 0 or n < 6):
+    if(n % 2 ==0):
+        print("Not Weird",n)
+    else:
+        print("Weird",n)  
+    
+n=24
+if (n > 6 and n < 21):
+    if(n % 2 == 0):
+        print("Weird",n)
+if(n > 20):
+        if(n % 2 == 0):
+            print("Not Weird",n) 
+        
