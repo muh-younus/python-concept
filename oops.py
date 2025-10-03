@@ -30,7 +30,7 @@
 # s1=student("Muhammad",[44,55,66])
 # s1.average()
 
-#blance , account number
+# blance , account number
 
 # class hbl_account:
 #     def __init__(self,balance):
@@ -77,25 +77,31 @@
 # print(branch2.old("jackma"))
 
 
-#Inheritance
+# Inheritance
 
-# 
 
-# 
 
-n = 3
+
+
+# n = 3
     
-if(n > 0 or n < 6):
-    if(n % 2 ==0):
-        print("Not Weird",n)
-    else:
-        print("Weird",n)  
+# if(n > 0 or n < 6):
+#     if(n % 2 ==0):
+#         print("Not Weird",n)
+#     else:
+#         print("Weird",n)  
     
-n=24
-if (n > 6 and n < 21):
-    if(n % 2 == 0):
-        print("Weird",n)
-if(n > 20):
-        if(n % 2 == 0):
-            print("Not Weird",n) 
+# n=24
+# if (n > 6 and n < 21):
+#     if(n % 2 == 0):
+#         print("Weird",n)
+#     else:
+#          print("Not Weird",n) 
         
+studentRecord = []         
+
+for _ in range(int(input())):
+    name = input()
+    score = float(input())
+    studentRecord.append([name, score])
+print(studentRecord)
