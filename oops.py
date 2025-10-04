@@ -98,10 +98,59 @@
 #     else:
 #          print("Not Weird",n) 
         
-studentRecord = []         
+studentRecord = [
+    ["Harry", 37.21],
+    ["Berry", 37.21],
+    ["Tina", 37.2],
+    ["Akriti", 41],
+    ["Harsh", 39]
+] 
 
-for _ in range(int(input())):
+# grade = [37.21,37.21,37.2,41,39]
+# grade = sorted(set(grade))
+# m = grade[1]
+# print("the student record is ", studentRecord)
+# print("the grade is ",grade) 
+# name = []
+
+# for val in studentRecord:
+    
+#     if(m == val[1]):
+#         print("val 1 is",val[1])
+#         print("val[0] is",val[0])
+#         name.append(val[0])
+# print(name)
+
+# # for _ in range(int(input())):
+# #     name = input()
+# #     score = float(input())
+# #     studentRecord.append([name, score])
+    
+# print(studentRecord)
+# sortedRecord = sorted(studentRecord, key=lambda x: x[1])
+# print(sortedRecord)
+
+n = int(input())
+result = []
+grade = []
+
+for i in range(n):
     name = input()
-    score = float(input())
-    studentRecord.append([name, score])
-print(studentRecord)
+    mark = float(input())
+    result.append([name,mark])
+    grade.append(mark)
+
+print(result)
+print(grade)
+grade = sorted(set(grade)) 
+m = grade[1]
+name = []
+
+for val in result:
+    if(m == val[1]):
+        name.append(val[0])
+
+
+
+for i in name:
+    print(i)
