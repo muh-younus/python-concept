@@ -47,6 +47,7 @@
 # python students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
 
 # The lowest grade of  belongs to Tina. The second lowest grade of  belongs to both Harry and Berry, so we order their names alphabetically and print each name on a new line.
+# solution
 
 # if __name__ == '__main__':
 #   studentRecord = []
@@ -66,24 +67,77 @@
 #     print(m)
 
 
-dict1 ={
+# dict1 ={
 
-    "ALi": [12,3,12,33],
-    "jackma":[12,3,12,33],
-    "Arif":[12,3,12,33],
+#     "ALi": [12,3,12,33],
+#     "jackma":[12,3,12,33],
+#     "Arif":[12,3,12,33],
 
-}
+# }
 
-queryName = "Arif"
-print(len(dict1[queryName]))
+# queryName = "Arif"
+# print(len(dict1[queryName]))
 
-sum = 0
+# sum = 0
 
 
-for i in dict1[queryName]:
-    num = int(i)
-    sum += num
+# for i in dict1[queryName]:
+#     num = int(i)
+#     sum += num
 
-average = sum/len(dict1[queryName])
-print(average)
+# average = sum/len(dict1[queryName])
+# # print(average)
+# print(f"{average:.2f}")  # Output: 56.00
 
+# lst = []
+# command =[
+# insert 0 5
+# insert 1 10
+# insert 0 6
+# print
+# remove 6
+# append 9
+# append 1
+# sort
+# print
+# pop
+# reverse
+# print
+# ]
+# N = input()
+# lst = []
+# for j in range(int(N)):
+#     command = input().split() #insert 0 5
+#     if(command[0] == "insert"):
+#         lst.insert(int(command[1]),int(command[2]))
+        
+#     elif command[0] == "print":
+#         print(lst)
+#     elif command[0] == "remove":
+#         list.remove(int(command[1]))
+#     elif command[0] == "append":
+#         lst.append(int(command[1]))
+#     elif command[0] == "sort":
+#         lst.sort()
+#     elif command[0] == "print":
+#         print(lst)
+#     elif command[0] == "pop":
+#         lst.pop()
+#     elif command[0] == "reverse":
+#         lst.reverse()
+#     elif command[0] == "print":
+#         print(lst)
+
+if __name__ == '__main__':
+    # Step 1: take number of elements
+    n = int(input("Enter number of elements: "))
+
+    # Step 2: take list of integers
+    integer_list = map(int, input("Enter numbers separated by space: ").split())
+
+    # Step 3: convert to tuple
+    t = tuple(integer_list)
+
+    # Step 4: print tuple and its hash value
+    print("Tuple:", t)
+    print("Hash value:", hash(t))
