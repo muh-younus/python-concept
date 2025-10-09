@@ -128,16 +128,23 @@
 #     elif command[0] == "print":
 #         print(lst)
 
-if __name__ == '__main__':
-    # Step 1: take number of elements
-    n = int(input("Enter number of elements: "))
+# if __name__ == '__main__':
+#     # Step 1: take number of elements
+#     n = int(input("Enter number of elements: "))
 
-    # Step 2: take list of integers
-    integer_list = map(int, input("Enter numbers separated by space: ").split())
+#     # Step 2: take list of integers
+#     integer_list = map(int, input("Enter numbers separated by space: ").split())
 
-    # Step 3: convert to tuple
-    t = tuple(integer_list)
+#     # Step 3: convert to tuple
+#     t = tuple(integer_list)
 
-    # Step 4: print tuple and its hash value
-    print("Tuple:", t)
-    print("Hash value:", hash(t))
+#     # Step 4: print tuple and its hash value
+#     print("Tuple:", t)
+#     print("Hash value:", hash(t))
+
+a = "I am Muhammad Younus"
+split_a = a.split()
+print(type(split_a))
+split_a = "-".join(split_a)
+print(split_a)
+print(type(split_a))
