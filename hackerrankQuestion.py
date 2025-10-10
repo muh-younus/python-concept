@@ -142,9 +142,21 @@
 #     print("Tuple:", t)
 #     print("Hash value:", hash(t))
 
-a = "I am Muhammad Younus"
-split_a = a.split()
-print(type(split_a))
-split_a = "-".join(split_a)
-print(split_a)
-print(type(split_a))
+# a = "I am Muhammad Younus"
+# split_a = a.split()
+# print(type(split_a))
+# split_a = "-".join(split_a)
+# print(split_a)
+# print(type(split_a))
+def count_substring(string, sub_string):
+    letter = string
+    
+    
+    return print(letter.count(sub_string)) 
+ 
+if __name__ == '__main__':
+    string = "ABCDCDC"
+    sub_string = "CDC"
+    
+    count = count_substring(string, sub_string)
+    print(count)
