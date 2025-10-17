@@ -101,12 +101,21 @@
 # print(len(set))  # 2
 # print(set)
 
-f = open('word.txt',"r")
-data = f.read()
-newData=data.replace("everyone","anyone")
-print(data)
-print(newData)
+# f = open('word.txt',"r")
+# data = f.read()
+# newData=data.replace("everyone","anyone")
+# print(data)
+# print(newData)
 
-w = open("word.txt","w")
-data = w.write(newData)
-print(data)
+# w = open("word.txt","w")
+# data = w.write(newData)
+# print(data)
+if __name__ == '__main__':
+    s = input()
+
+
+print(any(ch.isalnum() for ch in s))   # Alphanumeric
+print(any(ch.isalpha() for ch in s))   # Alphabet
+print(any(ch.isdigit() for ch in s))   # Digit
+print(any(ch.islower() for ch in s))   # Lowercase
+print(any(ch.isupper() for ch in s))
