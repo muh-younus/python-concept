@@ -110,12 +110,34 @@
 # w = open("word.txt","w")
 # data = w.write(newData)
 # print(data)
-if __name__ == '__main__':
-    s = input()
+# if __name__ == '__main__':
+#     s = input()
 
 
-print(any(ch.isalnum() for ch in s))   # Alphanumeric
-print(any(ch.isalpha() for ch in s))   # Alphabet
-print(any(ch.isdigit() for ch in s))   # Digit
-print(any(ch.islower() for ch in s))   # Lowercase
-print(any(ch.isupper() for ch in s))
+# print(any(ch.isalnum() for ch in s))   # Alphanumeric
+# print(any(ch.isalpha() for ch in s))   # Alphabet
+# print(any(ch.isdigit() for ch in s))   # Digit
+# print(any(ch.islower() for ch in s))   # Lowercase
+# print(any(ch.isupper() for ch in s))
+
+class student:
+    pass
+
+p1 = student()
+p1.name = "Haleem"
+p1.age = 21
+print(p1.__dict__)
+
+class car:
+    def __init__(self,color,company,model):
+        self.color = color
+        self.company = company
+        self.model = model
+    def __str__(self):
+        return f"The car is {self.color} and the company is {self.company} and the model is {self.model}"
+    
+k1 = car("Yelow", "volvo", 2023)
+print(k1)
+    
+   
+       
